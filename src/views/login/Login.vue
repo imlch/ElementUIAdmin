@@ -56,7 +56,7 @@
           sessionStorage.setItem(APP.$Config.tokenKey, '123456789');
           APP.$notify({
             title: '登录成功',
-            message: '很高兴你使用ElementUIAdmin！别忘了给个Star哦。',
+            message: '很高兴你使用科研管理系统。',
             type: 'success'
           });
           APP.loginLoading = false;
