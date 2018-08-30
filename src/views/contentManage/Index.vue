@@ -41,12 +41,12 @@
       </el-table-column>
       <el-table-column
               prop="name"
-              label="标题"
+              label="项目名称"
               width="180">
       </el-table-column>
       <el-table-column
               prop="address"
-              label="摘要">
+              label="研究内容">
       </el-table-column>
       <el-table-column
               label="操作"

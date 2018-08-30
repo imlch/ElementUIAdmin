@@ -12,32 +12,36 @@ menu.home = {
 
 
 /**
- * 字体图标
+ * 科研人员管理
  * @type {{name: string, icon: string, children: {}}}
  */
 menu.font_icon = {
-  name: '字体图标',
+  name: '研究室管理',
   icon: 'fa fa-th',
   children: {}
 };
 let icon = menu.font_icon.children;
 
+icon.category = {
+  name: '研究室管理',
+  path: '/category_manage',
+};
 icon.font_awesome = {
-  name: 'FontAwesome 4.7',
+  name: '主任',
   path: '/font_awesome',
 
 };
 icon.element_icon = {
-  name: 'ElementIcon',
+  name: '秘书',
   path: '/element_icon',
 };
 
 /**
- * 内容管理
+ * 科研项目管理
  * @type {{name: string, icon: string, children: {}}}
  */
 menu.content_manage = {
-  name: '内容管理',
+  name: '科研项目管理',
   icon: 'fa fa-file-text-o',
   children: {}
 };
@@ -45,46 +49,50 @@ menu.content_manage = {
 let ContentManage = menu.content_manage.children;
 
 ContentManage.post = {
-  name: '文章管理',
+  name: '项目列表',
   path: '/post_manage',
 };
-// ContentManage.category = {
-//   name: '分类管理',
-//   path: '/category_manage',
-// };
-// ContentManage.message = {
-//   name: '留言管理',
-//   path: '/message_manage',
-// };
+ContentManage.category = {
+   name: '分类管理',
+   path: '/category_manage',
+ };
+ ContentManage.message = {
+   name: '留言管理',
+   path: '/message_manage',
+ };
 
 
 /**
- * 用户管理
+ * 科研人员管理
  * @type {{name: string, icon: string, children: {}}}
  */
 menu.user_manage = {
-  name: '用户管理',
+  name: '科研人员管理',
   icon: 'fa fa-user-circle-o',
   children: {}
 };
 let UserManage = menu.user_manage.children;
 
 UserManage.user = {
-  name: '用户列表',
+  name: '科研人员列表',
   path: '/user_manage',
 };
 
 
 
 menu.category_manage = {
-  name: '分类管理',
+  name: '科研成果管理',
   icon: 'fa fa-sitemap',
   children: {}
 };
 let CategoryManage = menu.category_manage.children;
 
+CategoryManage.list = {
+  name: '成果列表',
+  path: '/user_manage',
+};
 CategoryManage.category = {
-  name: '分类列表',
+  name: '分类管理',
   path: '/category_manage',
 };
 
